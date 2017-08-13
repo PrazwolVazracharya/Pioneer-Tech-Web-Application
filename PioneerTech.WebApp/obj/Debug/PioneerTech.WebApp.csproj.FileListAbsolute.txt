@@ -32,3 +32,7 @@ c:\users\prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\Pi
 c:\users\prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.WebApp\obj\Debug\PioneerTech.WebApp.csprojResolveAssemblyReference.cache
 c:\users\prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.WebApp\obj\Debug\PioneerTech.WebApp.dll
 c:\users\prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.WebApp\obj\Debug\PioneerTech.WebApp.pdb
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.WebApp\bin\PioneerTech.Consultancy.DAL.dll
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.WebApp\bin\PioneerTech.Consultancy.Model.dll
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.WebApp\bin\PioneerTech.Consultancy.DAL.pdb
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.WebApp\bin\PioneerTech.Consultancy.Model.pdb
