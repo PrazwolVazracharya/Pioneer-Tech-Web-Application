@@ -79,5 +79,10 @@ namespace PioneerTech.WebApp.UI
         {
             DropDownList1.DataBind();
         }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
