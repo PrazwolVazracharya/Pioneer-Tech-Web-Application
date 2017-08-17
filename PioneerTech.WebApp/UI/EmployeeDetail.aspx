@@ -19,12 +19,15 @@
         .auto-style13 {
             width: 293px;
         }
+
         .auto-style15 {
             width: 485px;
         }
+
         .auto-style16 {
             width: 97px;
         }
+
         .auto-style17 {
             width: 99px;
         }
@@ -50,7 +53,9 @@
                 <asp:Label ID="Label1" runat="server" Text="Last Name"></asp:Label>
             </td>
             <td id="LastNameColumn" class="auto-style13" colspan="3">
+
                 <asp:TextBox ID="LastNameTextBox" runat="server" Style="margin-left: 0px" Width="278px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="LastNameRequiredFieldValidator1" runat="server" ErrorMessage="Please! Enter your Last Name" ControlToValidate="LastNameTextBox"></asp:RequiredFieldValidator>
             </td>
         </tr>
 
@@ -69,6 +74,7 @@
             </td>
             <td id="MobileNumberColumn" class="auto-style13" colspan="3">
                 <asp:TextBox ID="MobileNumberTextBox" runat="server" Style="margin-left: 0px" Width="279px"></asp:TextBox>
+                <asp:RegularExpressionValidator ID="MobileNumberRegularExpressionValidator1" runat="server" ErrorMessage="Please! Enter in Correct Format" ControlToValidate="MobileNumberTextBox" ValidationExpression="((\(\d{3}\) ?)|(\d{3}))?\d{3}\d{4}"></asp:RegularExpressionValidator>
             </td>
         </tr>
 
@@ -123,12 +129,15 @@
             </td>
             <td id="ZipCodeColumn" class="auto-style13" colspan="3">
                 <asp:TextBox ID="ZipCodeTextBox" runat="server" Style="margin-left: 0px" Width="279px"></asp:TextBox>
+
+                <asp:RegularExpressionValidator ID="ZipCodeRegularExpressionValidator1" runat="server" ErrorMessage="Please! Enter only Five Digits" ControlToValidate="ZipCodeTextBox" ValidationExpression="\d{5}(-\d{4})?"></asp:RegularExpressionValidator>
             </td>
         </tr>
 
+
         <tr id="Button">
             <td class="auto-style">
-                &nbsp;</td>
+
             <td class="auto-style16">
                 <asp:Button ID="Save" runat="server" Text="Save" Width="78px" CssClass="auto-style5" Height="27px" OnClick="Save_Click" />
             </td>
@@ -139,7 +148,6 @@
                 <asp:Button ID="clear" runat="server" Text="Clear" Width="78px" CssClass="auto-style8" Height="27px" OnClick="clear_Click" />
             </td>
             <td class="auto-style">
-                &nbsp;</td>
         </tr>
     </table>
 

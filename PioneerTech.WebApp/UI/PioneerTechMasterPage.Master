@@ -25,7 +25,8 @@
                         <asp:MenuItem NavigateUrl="~/UI/EmployeeDetail.aspx" Text="Employee Detail" Value="Employee Detail Menu"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/UI/ProjectDetail.aspx" Text="Project Detail" Value="Project Detail Menu"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/UI/TechnicalDetail.aspx" Text="Technical Detail" Value="Technical Detail Menu"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/UI/CompanyDetail.aspx" Text="Company Detail" Value="CompanyDetail Menu"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/UI/CompanyDetail.aspx" Text="Company Detail" Value="Company Detail Menu"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/UI/EducationDetail.aspx" Text="Education Detail" Value="Education Detail Menu"></asp:MenuItem>
                         
                     </Items>
                 </asp:Menu>

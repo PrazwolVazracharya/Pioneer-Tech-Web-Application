@@ -29,7 +29,7 @@ namespace PioneerTech.WebApp.UI
             };
 
             EmployeeDataAccessLayer companyDataAccessobj = new EmployeeDataAccessLayer();
-            int RowsAffected = companyDataAccessobj.CompanySqlConnection(companyDetailobj);
+            long RowsAffected = companyDataAccessobj.CompanySqlConnection(companyDetailobj);
 
             if (RowsAffected > 0)
             {
@@ -80,7 +80,12 @@ namespace PioneerTech.WebApp.UI
             DropDownList1.DataBind();
         }
 
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        //protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        protected void DropDownList1_SelectedIndexChanged1(object sender, EventArgs e)
         {
 
         }

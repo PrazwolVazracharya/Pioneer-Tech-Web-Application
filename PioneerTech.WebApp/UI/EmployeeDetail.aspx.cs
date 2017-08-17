@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Text.RegularExpressions;
 
 namespace PioneerTech.WebApp.UI
 {
@@ -15,7 +16,7 @@ namespace PioneerTech.WebApp.UI
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
 
         protected void Save_Click(object sender, EventArgs e)
@@ -34,7 +35,7 @@ namespace PioneerTech.WebApp.UI
                 ZipCode = Convert.ToInt64(ZipCodeTextBox.Text)
             };
             EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
-            int RowsAffected = employeeDataAccessobj.EmployeeSqlConnection(employeeDetailobj);
+            long RowsAffected = employeeDataAccessobj.EmployeeSqlConnection(employeeDetailobj);
 
             if (RowsAffected > 0)
             {

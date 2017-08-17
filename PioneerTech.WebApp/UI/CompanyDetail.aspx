@@ -23,11 +23,7 @@
         }
 
         .auto-style20 {
-            margin-left: 37px;
-        }
-
-        .auto-style22 {
-            width: 276px;
+            margin-left: 0px;
         }
 
         .auto-style23 {
@@ -108,7 +104,7 @@
 
                 <asp:Label ID="Company_CompanyIDLabel" runat="server" Text="Company ID "></asp:Label>
 
-                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="CompanyID" DataValueField="CompanyID" Width="164px" CssClass="auto-style2" Height="27px">
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="CompanyID" DataValueField="CompanyID" Width="164px" CssClass="auto-style2" Height="27px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged1">
                 </asp:DropDownList>
 
                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:PioneerTechConsultancy_DatabaseConnectionString2 %>" SelectCommand="SELECT [CompanyID] FROM [CompanyDetail] WHERE ([EmployeeID] = @EmployeeID)">
