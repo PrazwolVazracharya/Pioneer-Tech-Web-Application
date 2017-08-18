@@ -156,7 +156,8 @@
 &nbsp;<asp:DropDownList ID="EmployeeIdDropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="EmployeeID" DataValueField="EmployeeID" Width="182px" CssClass="auto-style21">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PioneerTechConsultancy_DatabaseConnectionString5 %>" SelectCommand="SELECT [EmployeeID] FROM [EmployeeDetail]"></asp:SqlDataSource>
-                <asp:Button ID="EditButton" runat="server" Text="Edit" Width="78px" CssClass="auto-style5" Height="27px" OnClick="EditButton_Click" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="EditButton0" runat="server" Text="Edit" Width="78px" CssClass="auto-style5" Height="27px" OnClick="EditButton_Click" />
             </td>
             <td class="auto-style16">
                 <asp:Button ID="clear" runat="server" Text="Clear" Width="78px" CssClass="auto-style8" Height="27px" OnClick="clear_Click" />
