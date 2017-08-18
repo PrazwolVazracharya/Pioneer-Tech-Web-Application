@@ -65,6 +65,7 @@
             </td>
             <td id="EmailIdColumn" class="auto-style13" colspan="3">
                 <asp:TextBox ID="EmailIDTextBox3" runat="server" Style="margin-left: 0px" Width="278px"></asp:TextBox>
+                <asp:RegularExpressionValidator ID="EmailIdRegularExpressionValidator1" runat="server" ErrorMessage="Please! enter in correct format" ControlToValidate="EmailIDTextBox3"></asp:RegularExpressionValidator>
             </td>
         </tr>
 
@@ -93,6 +94,7 @@
             </td>
             <td id="Address1Column" class="auto-style13" colspan="3">
                 <asp:TextBox ID="Address1TextBox" runat="server" Style="margin-left: 0px" Width="279px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="Address1RequiredFieldValidator1" runat="server" ErrorMessage="Please! Enter your correct address" ControlToValidate="Address1TextBox"></asp:RequiredFieldValidator>
             </td>
         </tr>
 

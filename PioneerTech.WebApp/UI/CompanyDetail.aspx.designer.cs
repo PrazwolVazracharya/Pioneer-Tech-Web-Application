@@ -31,6 +31,15 @@ namespace PioneerTech.WebApp.UI {
         protected global::System.Web.UI.WebControls.TextBox EmployerNameTextBox;
         
         /// <summary>
+        /// EmployerNameRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmployerNameRequiredFieldValidator;
+        
+        /// <summary>
         /// ContactNumberLabel control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,15 @@ namespace PioneerTech.WebApp.UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox LocationTextBox;
+        
+        /// <summary>
+        /// LocationRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator LocationRequiredFieldValidator;
         
         /// <summary>
         /// WebsiteLabel control.

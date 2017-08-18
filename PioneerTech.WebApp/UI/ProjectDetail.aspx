@@ -41,6 +41,7 @@
                 </td>
             <td id ="ProjectNameColumn" colspan="3">
                 <asp:TextBox ID="ProjectNameTextBox" runat="server" style="margin-left: 0px" Width="279px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="ProjectNameRequiredFieldValidator" runat="server" ErrorMessage="Please! Enter correct Project Name" ControlToValidate="ProjectNameTextBox"></asp:RequiredFieldValidator>
             </td>
          </tr>
 
@@ -50,6 +51,7 @@
                 </td>
             <td id ="ClientNameColumn" colspan="3">
                 <asp:TextBox ID="ClientNameTextBox" runat="server" style="margin-left: 0px" Width="279px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="ClientNameRequiredFieldValidator" runat="server" ErrorMessage="Please! Enter Valid Client Name" ControlToValidate="ClientNameTextBox"></asp:RequiredFieldValidator>
             </td>
          </tr>
          

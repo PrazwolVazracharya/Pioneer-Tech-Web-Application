@@ -47,6 +47,7 @@
             </td>
             <td id="EmployerNameColumn" class="auto-style13" colspan="2">
                 <asp:TextBox ID="EmployerNameTextBox" runat="server" Style="margin-left: 0px" Width="279px" CssClass="auto-style14"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="EmployerNameRequiredFieldValidator" runat="server" ErrorMessage="Please!Enter The Employers Name" ControlToValidate="EmployerNameTextBox"></asp:RequiredFieldValidator>
             </td>
         </tr>
 
@@ -65,6 +66,7 @@
             </td>
             <td id="LocationColumn" class="auto-style7" colspan="2">
                 <asp:TextBox ID="LocationTextBox" runat="server" Style="margin-left: 0px" Width="279px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="LocationRequiredFieldValidator" runat="server" ErrorMessage="Enter Valid Location" ControlToValidate="LocationTextBox"></asp:RequiredFieldValidator>
             </td>
         </tr>
 

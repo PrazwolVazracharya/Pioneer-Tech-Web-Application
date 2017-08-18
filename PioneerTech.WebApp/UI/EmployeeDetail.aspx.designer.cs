@@ -76,6 +76,15 @@ namespace PioneerTech.WebApp.UI {
         protected global::System.Web.UI.WebControls.TextBox EmailIDTextBox3;
         
         /// <summary>
+        /// EmailIdRegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator EmailIdRegularExpressionValidator1;
+        
+        /// <summary>
         /// Label4 control.
         /// </summary>
         /// <remarks>
@@ -137,6 +146,15 @@ namespace PioneerTech.WebApp.UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Address1TextBox;
+        
+        /// <summary>
+        /// Address1RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Address1RequiredFieldValidator1;
         
         /// <summary>
         /// Label7 control.
