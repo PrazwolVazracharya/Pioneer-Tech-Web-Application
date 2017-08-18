@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text.RegularExpressions;
+using System.Data.SqlClient;
 
 namespace PioneerTech.WebApp.UI
 {
@@ -62,6 +63,37 @@ namespace PioneerTech.WebApp.UI
             HomeCountryTextBox.Text = "";
             CurrentCountryTextBox.Text = "";
             ZipCodeTextBox.Text = "";
+        }
+
+        protected void EditButton_Click(object sender, EventArgs e)
+        {
+            EmployeeDetailsModel model = new EmployeeDetailsModel
+            {
+                FirstName = FirstNameTextBox.Text,
+                LastName = LastNameTextBox.Text,
+                EmailId = EmailIDTextBox3.Text,
+                PhoneNumber = Convert.ToInt64(MobileNumberTextBox.Text),
+                AlternatePhoneNumber = Convert.ToInt64(AlternateMobileNumberTextBox.Text),
+                Address1 = Address1TextBox.Text,
+                Address2 = Address2TextBox.Text,
+                HomeCountry = HomeCountryTextBox.Text,
+                CurrentCountry = CurrentCountryTextBox.Text,
+                ZipCode = Convert.ToInt64(ZipCodeTextBox.Text)
+            };
+
+            long EditEmployeeId = Convert.ToInt32(EmployeeIdDropDownList1.Text);
+            SqlConnection mysqlconnection = new SqlConnection();
+            mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
+                         "database = PioneerTechConsultancy_Database;Integrated security = SSPI";
+
+            SqlCommand employeeDetail_cmd = new SqlCommand("UPDATE [EmployeeDetail] SET[FirstName] = " +
+                            "'" + model.FirstName + "',[LastName] = '" + model.LastName + "',[Email] = '" + model.EmailId+ "',[ContactNumber] = " + model.PhoneNumber + ",[AlternateContactNumber] = " + model.AlternatePhoneNumber + ",[Address] ='" + model.Address1 + "',[AlternateAddress] ='" + model.Address2 + "',[CurrentCountry] ='" + model.CurrentCountry  +"',[HomeCountry] ='" + model.HomeCountry + "',[ZipCode] = " + model.ZipCode +
+                            " WHERE EmployeeID = " + EditEmployeeId, mysqlconnection);
+
+            mysqlconnection.Open();
+
+            long result = employeeDetail_cmd.ExecuteNonQuery();
+            ClientScript.RegisterStartupScript(this.GetType(), "Operation was", "alert(' Employee Details SUCCESSFULLY Edited');", true);
         }
     }
 }

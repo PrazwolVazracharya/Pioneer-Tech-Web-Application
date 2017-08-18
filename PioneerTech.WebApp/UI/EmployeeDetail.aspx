@@ -12,7 +12,7 @@
 
         .auto-style8 {
             margin-top: 28px;
-            margin-left: 0px;
+            margin-left: 74px;
             margin-right: 69px;
         }
 
@@ -20,21 +20,28 @@
             width: 293px;
         }
 
-        .auto-style15 {
-            width: 485px;
-        }
-
         .auto-style16 {
             width: 97px;
+            height: 80px;
         }
 
-        .auto-style17 {
-            width: 99px;
+        .auto-style18 {
+            width: 100%;
+            }
+        .auto-style19 {
+            width: 286px;
+            height: 80px;
+        }
+        .auto-style21 {
+            margin-left: 90px;
+        }
+        .auto-style22 {
+            height: 80px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table id="EmployeeTable" style="width: 100%; height: 150px;">
+    <table id="EmployeeTable" class="auto-style18">
         <tr>
             <td class="auto-style1">Employee Details</td>
         </tr>
@@ -65,7 +72,7 @@
             </td>
             <td id="EmailIdColumn" class="auto-style13" colspan="3">
                 <asp:TextBox ID="EmailIDTextBox3" runat="server" Style="margin-left: 0px" Width="278px"></asp:TextBox>
-                <asp:RegularExpressionValidator ID="EmailIdRegularExpressionValidator1" runat="server" ErrorMessage="Please! enter in correct format" ControlToValidate="EmailIDTextBox3"></asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="EmailIdRegularExpressionValidator1" runat="server" ErrorMessage="Please! enter in correct format" ControlToValidate="EmailIDTextBox3" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             </td>
         </tr>
 
@@ -138,18 +145,23 @@
 
 
         <tr id="Button">
-            <td class="auto-style">
+            <td class="auto-style22">
 
             <td class="auto-style16">
                 <asp:Button ID="Save" runat="server" Text="Save" Width="78px" CssClass="auto-style5" Height="27px" OnClick="Save_Click" />
             </td>
-            <td class="auto-style16">
-                <asp:Button ID="EditButton" runat="server" Text="Edit" Width="78px" CssClass="auto-style5" Height="27px" />
+            <td class="auto-style19">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="EmployeeId_Label" runat="server" Text="Employee ID"></asp:Label>
+&nbsp;<asp:DropDownList ID="EmployeeIdDropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="EmployeeID" DataValueField="EmployeeID" Width="182px" CssClass="auto-style21">
+                </asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PioneerTechConsultancy_DatabaseConnectionString5 %>" SelectCommand="SELECT [EmployeeID] FROM [EmployeeDetail]"></asp:SqlDataSource>
+                <asp:Button ID="EditButton" runat="server" Text="Edit" Width="78px" CssClass="auto-style5" Height="27px" OnClick="EditButton_Click" />
             </td>
             <td class="auto-style16">
                 <asp:Button ID="clear" runat="server" Text="Clear" Width="78px" CssClass="auto-style8" Height="27px" OnClick="clear_Click" />
             </td>
-            <td class="auto-style">
+            <td class="auto-style22">
         </tr>
     </table>
 
