@@ -1,0 +1,43 @@
+﻿body {
+}
+
+.header {
+    height: 20%;
+    width: 100%;
+    background-color: orange;
+    top: 0px;
+    position: fixed;
+    left: 2px;
+}
+
+.h2 {
+font-style:italic;
+color:black;
+}
+
+.content {
+    top: 20%;
+    height: 118%;
+    width: 104%;
+    left: 18%;
+    position: fixed
+}
+
+
+.navigation {
+    height: 34%;
+    width: 15%;
+    background-color: orange;
+    top: 21%;
+    position: fixed;
+ 
+}
+
+.footer {
+    height: 11%;
+    width: 100%;
+    background-color: orange;
+    position: fixed;
+    top:90%;
+    left: -2px;
+}

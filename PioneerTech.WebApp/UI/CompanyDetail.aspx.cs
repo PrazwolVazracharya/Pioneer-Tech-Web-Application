@@ -89,5 +89,15 @@ namespace PioneerTech.WebApp.UI
         {
 
         }
+
+        protected void ClearButton_Click(object sender, EventArgs e)
+        {
+            EmployerNameTextBox.Text = "";
+            ContactNumberTextBox.Text = "";
+            LocationTextBox.Text = "";
+            WebsiteTextBox.Text = "";
+            EmployeeIDTextBox.Text = "";
+
+        }
     }
 }

@@ -58,6 +58,21 @@ namespace PioneerTech.Consultancy.DAL
             return CompanyConnection;
         }
 
+        public long EducationSqlConnection(EducationDetailsModel EducationDetailsmodel)
+        {
+            SqlConnection mysqlconnection = new SqlConnection();
+            mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
+                         "database = PioneerTechConsultancy_Database;Integrated security = SSPI";
+
+            mysqlconnection.Open();
+            SqlCommand EducationDetailCommand = new SqlCommand("INSERT INTO EducationDetail VALUES(" +
+                             "'" + EducationDetailsmodel.CourseType + "','" + EducationDetailsmodel.YearOfPass + "','" + EducationDetailsmodel.CourseSpecialization + "'," +
+                              + EducationDetailsmodel.EmployeeId + ")", mysqlconnection);
+            long EducationConnection = EducationDetailCommand.ExecuteNonQuery();
+            mysqlconnection.Close();
+            return EducationConnection;
+        }
+
         public long TechnicalSqlConnection(TechnicalDetailsModel TechnicalDetailsmodel)
         {
             SqlConnection mysqlconnection = new SqlConnection();
