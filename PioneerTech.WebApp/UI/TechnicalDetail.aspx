@@ -3,16 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
-            width: 493px;
-            height: 199px;
+            width: 636px;
+            height: 261px;
         }
 
         .auto-style2 {
             width: 66px;
-        }
-
-        .auto-style4 {
-            width: 178px;
         }
 
         .auto-style5 {
@@ -29,9 +25,6 @@
 
         .auto-style8 {
             width: 219px;
-        }
-        .auto-style9 {
-            width: 284px;
         }
         .auto-style10 {
             width: 315px;
@@ -50,6 +43,7 @@
             </td>
             <td id="UIColumn" class="auto-style13">
                 <asp:TextBox ID="UITextBox" runat="server" Style="margin-left: 0px" Width="279px" CssClass="auto-style14"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="UIRequiredFieldValidator1" runat="server" ErrorMessage="Please, Enter the User Interface correctly" ControlToValidate="UITextBox"></asp:RequiredFieldValidator>
             </td>
         </tr>
 
@@ -59,6 +53,7 @@
             </td>
             <td id="ProgrammingLanguageColumn" class="auto-style6">
                 <asp:TextBox ID="ProgrammingLanguageTextBox" runat="server" Style="margin-left: 0px" Width="279px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="ProgrammingLanguageRequiredFieldValidator1" runat="server" ErrorMessage="Please! Fill Correct Programming Language Details" ControlToValidate="ProgrammingLanguageTextBox"></asp:RequiredFieldValidator>
             </td>
         </tr>
 
@@ -68,6 +63,7 @@
             </td>
             <td id="DatabaseColumn" class="auto-style7">
                 <asp:TextBox ID="DatabaseTextBox" runat="server" Style="margin-left: 0px" Width="279px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="DatabaseRequiredFieldValidator1" runat="server" ErrorMessage="Please, Fill Database Details" ControlToValidate="DatabaseTextBox"></asp:RequiredFieldValidator>
             </td>
         </tr>
 

@@ -31,6 +31,15 @@ namespace PioneerTech.WebApp.UI {
         protected global::System.Web.UI.WebControls.TextBox UITextBox;
         
         /// <summary>
+        /// UIRequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator UIRequiredFieldValidator1;
+        
+        /// <summary>
         /// ProgrammingLanguageLabel control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace PioneerTech.WebApp.UI {
         protected global::System.Web.UI.WebControls.TextBox ProgrammingLanguageTextBox;
         
         /// <summary>
+        /// ProgrammingLanguageRequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ProgrammingLanguageRequiredFieldValidator1;
+        
+        /// <summary>
         /// LocationLabel control.
         /// </summary>
         /// <remarks>
@@ -65,6 +83,15 @@ namespace PioneerTech.WebApp.UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox DatabaseTextBox;
+        
+        /// <summary>
+        /// DatabaseRequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator DatabaseRequiredFieldValidator1;
         
         /// <summary>
         /// Label1 control.

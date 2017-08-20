@@ -31,6 +31,15 @@ namespace PioneerTech.WebApp.UI {
         protected global::System.Web.UI.WebControls.TextBox CourseTypeTextBox;
         
         /// <summary>
+        /// CourseTypeRequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CourseTypeRequiredFieldValidator1;
+        
+        /// <summary>
         /// YearOfPassLabel control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,15 @@ namespace PioneerTech.WebApp.UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox CourseSpecializationTextBox;
+        
+        /// <summary>
+        /// CourseSpecializationRequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CourseSpecializationRequiredFieldValidator1;
         
         /// <summary>
         /// Label2 control.
