@@ -6,8 +6,8 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_NewBackgroundProfile>True</_NewBackgroundProfile>
-    <_PublishTargetUrl>C:\inetpub\wwwroot\Website_Pioneer</_PublishTargetUrl>
+    <_NewBackgroundProfile>False</_NewBackgroundProfile>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\PioneerWebsite</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
@@ -26,10 +26,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/18/2017 12:42:32</publishTime>
     </File>
     <File Include="bin/PioneerTech.WebApp.dll">
-      <publishTime>08/18/2017 12:42:44</publishTime>
+      <publishTime>08/21/2017 13:02:08</publishTime>
     </File>
     <File Include="bin/PioneerTech.WebApp.pdb">
-      <publishTime>08/18/2017 12:42:44</publishTime>
+      <publishTime>08/21/2017 13:02:08</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>06/27/2016 14:50:24</publishTime>
@@ -122,7 +122,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/18/2017 11:56:15</publishTime>
     </File>
     <File Include="UI/EducationDetail.aspx">
-      <publishTime>08/18/2017 11:56:14</publishTime>
+      <publishTime>08/20/2017 15:44:53</publishTime>
     </File>
     <File Include="UI/EmployeeDetail.aspx">
       <publishTime>08/18/2017 01:23:10</publishTime>
@@ -137,7 +137,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/17/2017 21:38:18</publishTime>
     </File>
     <File Include="UI/TechnicalDetail.aspx">
-      <publishTime>08/18/2017 12:20:26</publishTime>
+      <publishTime>08/20/2017 15:37:26</publishTime>
     </File>
     <File Include="Web.config">
       <publishTime>08/18/2017 12:42:46</publishTime>

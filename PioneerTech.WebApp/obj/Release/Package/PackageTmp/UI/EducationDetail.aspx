@@ -30,10 +30,14 @@
         .auto-style20 {
             width: 92px;
         }
+        .auto-style21 {
+            width: 64%;
+            height: 186px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table id="EducationTable" style="width: 50%; ">
+    <table id="EducationTable" class="auto-style21">
         <tr>
             <td class="auto-style15" colspan="2">Education Details</td>
         </tr>
@@ -44,6 +48,7 @@
             </td>
             <td id="CourseTypeColumn" class="auto-style13">
                 <asp:TextBox ID="CourseTypeTextBox" runat="server" Style="margin-left: 0px" Width="279px" CssClass="auto-style14"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="CourseTypeRequiredFieldValidator1" runat="server" ErrorMessage="Please! Enter Correct Course Type" ControlToValidate="CourseTypeTextBox"></asp:RequiredFieldValidator>
             </td>
         </tr>
 
@@ -62,6 +67,7 @@
             </td>
             <td id="CourseSpecializationColumn" class="auto-style6">
                 <asp:TextBox ID="CourseSpecializationTextBox" runat="server" Style="margin-left: 0px" Width="279px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="CourseSpecializationRequiredFieldValidator1" runat="server" ErrorMessage="Please Fill the Course" ControlToValidate="CourseSpecializationTextBox"></asp:RequiredFieldValidator>
             </td>
         </tr>
 
