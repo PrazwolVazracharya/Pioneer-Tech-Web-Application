@@ -36,7 +36,7 @@ namespace PioneerTech.WebApp.UI
                 ZipCode = Convert.ToInt64(ZipCodeTextBox.Text)
             };
             EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
-            long RowsAffected = employeeDataAccessobj.EmployeeSqlConnection(employeeDetailobj);
+            long RowsAffected = employeeDataAccessobj.SaveEmployeeSqlConnection(employeeDetailobj);
 
             if (RowsAffected > 0)
             {
@@ -87,7 +87,7 @@ namespace PioneerTech.WebApp.UI
                          "database = PioneerTechConsultancy_Database;Integrated security = SSPI";
 
             SqlCommand employeeDetail_cmd = new SqlCommand("UPDATE [EmployeeDetail] SET[FirstName] = " +
-                            "'" + model.FirstName + "',[LastName] = '" + model.LastName + "',[Email] = '" + model.EmailId+ "',[ContactNumber] = " + model.PhoneNumber + ",[AlternateContactNumber] = " + model.AlternatePhoneNumber + ",[Address] ='" + model.Address1 + "',[AlternateAddress] ='" + model.Address2 + "',[CurrentCountry] ='" + model.CurrentCountry  +"',[HomeCountry] ='" + model.HomeCountry + "',[ZipCode] = " + model.ZipCode +
+                            "'" + model.FirstName + "',[LastName] = '" + model.LastName + "',[Email] = '" + model.EmailId + "',[ContactNumber] = " + model.PhoneNumber + ",[AlternateContactNumber] = " + model.AlternatePhoneNumber + ",[Address] ='" + model.Address1 + "',[AlternateAddress] ='" + model.Address2 + "',[CurrentCountry] ='" + model.CurrentCountry + "',[HomeCountry] ='" + model.HomeCountry + "',[ZipCode] = " + model.ZipCode +
                             " WHERE EmployeeID = " + EditEmployeeId, mysqlconnection);
 
             mysqlconnection.Open();

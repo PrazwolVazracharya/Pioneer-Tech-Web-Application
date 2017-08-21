@@ -9,6 +9,6 @@ C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\Pi
 C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.Consultancy.DAL\bin\Debug\PioneerTech.Consultancy.DAL.pdb
 C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.Consultancy.DAL\bin\Debug\PioneerTech.Consultancy.Model.dll
 C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.Consultancy.DAL\bin\Debug\PioneerTech.Consultancy.Model.pdb
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.Consultancy.DAL\obj\Debug\PioneerTech.Consultancy.DAL.csprojResolveAssemblyReference.cache
 C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.Consultancy.DAL\obj\Debug\PioneerTech.Consultancy.DAL.dll
 C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.Consultancy.DAL\obj\Debug\PioneerTech.Consultancy.DAL.pdb
-C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.WebApp\PioneerTech.Consultancy.DAL\obj\Debug\PioneerTech.Consultancy.DAL.csprojResolveAssemblyReference.cache

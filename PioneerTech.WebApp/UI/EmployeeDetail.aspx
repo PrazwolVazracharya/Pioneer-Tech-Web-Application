@@ -27,14 +27,17 @@
 
         .auto-style18 {
             width: 100%;
-            }
+        }
+
         .auto-style19 {
             width: 286px;
             height: 80px;
         }
+
         .auto-style21 {
             margin-left: 90px;
         }
+
         .auto-style22 {
             height: 80px;
         }
@@ -151,9 +154,9 @@
                 <asp:Button ID="Save" runat="server" Text="Save" Width="78px" CssClass="auto-style5" Height="27px" OnClick="Save_Click" />
             </td>
             <td class="auto-style19">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
                 <asp:Label ID="EmployeeId_Label" runat="server" Text="Employee ID"></asp:Label>
-&nbsp;<asp:DropDownList ID="EmployeeIdDropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="EmployeeID" DataValueField="EmployeeID" Width="182px" CssClass="auto-style21">
+                <asp:DropDownList ID="EmployeeIdDropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="EmployeeID" DataValueField="EmployeeID" Width="182px" CssClass="auto-style21">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PioneerTechConsultancy_DatabaseConnectionString5 %>" SelectCommand="SELECT [EmployeeID] FROM [EmployeeDetail]"></asp:SqlDataSource>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
